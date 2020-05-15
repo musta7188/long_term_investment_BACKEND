@@ -15,7 +15,7 @@ p3 = Portfolio.create(name: "forex", user_id: u1.id)
 
 
 s1 = Stock.create(price: 125, symbol: "AMZ")
-s2 = Stock.create(price: 28, symbol: "APP")
+s2 = Stock.create(price: 28, symbol: "AAPL")
 s3 = Stock.create(price: 35, symbol: "FB")
 
 ps1 = PortfolioStock.create(portfolio_id: p1.id, stock_id: s1.id )
@@ -24,6 +24,7 @@ ps3 = PortfolioStock.create(portfolio_id: p1.id, stock_id: s3.id )
 
 raccomandation = Recommendation.create(name: 'dashboard') 
 
-rs1 = RecommendedStock.create(price: 123, symbol: "ZOOM", recommendation_id: raccomandation.id)
-rs2 = RecommendedStock.create(price: 33, symbol: "FTSE100", recommendation_id: raccomandation.id)
-rs3 = RecommendedStock.create(price: 55, symbol: "NSDQ100", recommendation_id: raccomandation.id)
+rs1 = RecommendedStock.create(price: 123, symbol: "AMZ", recommendation_id: raccomandation.id)
+rs2 = RecommendedStock.create(price: 300, symbol: "AAPL", recommendation_id: raccomandation.id)
+rs3 = RecommendedStock.create(price: 230.5, symbol: "FB", recommendation_id: raccomandation.id)
+rs4 = RecommendedStock.create(price: 100, symbol: "ZM", recommendation_id: raccomandation.id)
