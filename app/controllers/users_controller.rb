@@ -62,7 +62,7 @@
 
     user = User.find_by(id: id)
     if user 
-      render json: {portfolios: user.portfolios, token: generate_token({id: user.id})}
+      render json: {portfolios: user.portfolios}
     else 
       render json: {message: "items not found "}
     end
