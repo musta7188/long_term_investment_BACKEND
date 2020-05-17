@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get '/validate', to: "users#validate"
   post '/sign-in', to: "users#sign_in"
-  get 'portfolios', to: "users#portfolios"
+  get '/user-portfolios', to: "users#userportfolios"
 
   
 end

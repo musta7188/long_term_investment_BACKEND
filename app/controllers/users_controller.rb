@@ -16,11 +16,11 @@
 
 
     def create 
-      user = User.new(user_params)
-    
+      user = User.new(name: params[:name], email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation])
+
       if user.save 
         render json: {user: user.name, token: generate_token({id: user.id}) }
-        byebug
+     
       else
         render json: {erros: user.errors.full_messages}
       end
@@ -57,14 +57,15 @@
   end
 
 
-  def portfolios 
+  def userportfolios 
     id = decode_token 
 
     user = User.find_by(id: id)
-    if user 
+
+    
+    if user
       render json: {portfolios: user.portfolios}
-    else 
-      render json: {message: "items not found "}
+   
     end
 
   end
@@ -72,7 +73,7 @@
   private 
 
   def user_params 
-    params.require(:user).permit(:name, :password_digest, :email)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 
 
