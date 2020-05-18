@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :portfolios
-  # resources :stocks
+  resources :stocks
   resources :recommended_stocks
   resources :recommendations
   # resources :portfolio_stocks

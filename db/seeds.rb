@@ -14,13 +14,28 @@ p2 = Portfolio.create(name: "crypto", user_id: u1.id)
 p3 = Portfolio.create(name: "forex", user_id: u1.id)
 
 
-s1 = Stock.create(price: 125, symbol: "AMZ")
-s2 = Stock.create(price: 28, symbol: "AAPL")
-s3 = Stock.create(price: 35, symbol: "FB")
+s1 = Stock.create(open: 125, units: 2.4, symbol: "AMZ", portfolio_id: p1.id)
+s2 = Stock.create(open: 28, units: 5, symbol: "AAPL", portfolio_id: p1.id)
+s3 = Stock.create(open: 35, units: 8, symbol: "FB", portfolio_id: p1.id)
+s4 = Stock.create(open: 158, units: 2.4, symbol: "ZM", portfolio_id: p2.id)
+s5 = Stock.create(open: 271, units: 3.95, symbol: "MA", portfolio_id: p2.id)
+s6 = Stock.create(open: 22, units: 45, symbol: "BAC", portfolio_id: p2.id)
+s1 = Stock.create(open: 125, units: 2.4, symbol: "AMZ", portfolio_id: p1.id)
+s2 = Stock.create(open: 28, units: 5, symbol: "AAPL", portfolio_id: p1.id)
+s3 = Stock.create(open: 35, units: 8, symbol: "FB", portfolio_id: p1.id)
+s4 = Stock.create(open: 158, units: 2.4, symbol: "ZM", portfolio_id: p2.id)
+s5 = Stock.create(open: 271, units: 3.95, symbol: "MA", portfolio_id: p2.id)
+s6 = Stock.create(open: 22, units: 45, symbol: "BAC", portfolio_id: p2.id)
+s1 = Stock.create(open: 125, units: 2.4, symbol: "AMZ", portfolio_id: p1.id)
+s2 = Stock.create(open: 28, units: 5, symbol: "AAPL", portfolio_id: p1.id)
+s3 = Stock.create(open: 35, units: 8, symbol: "FB", portfolio_id: p1.id)
+s4 = Stock.create(open: 158, units: 2.4, symbol: "ZM", portfolio_id: p2.id)
+s5 = Stock.create(open: 271, units: 3.95, symbol: "MA", portfolio_id: p2.id)
+s6 = Stock.create(open: 22, units: 45, symbol: "BAC", portfolio_id: p2.id)
 
-ps1 = PortfolioStock.create(portfolio_id: p1.id, stock_id: s1.id )
-ps2 = PortfolioStock.create(portfolio_id: p1.id, stock_id: s2.id )
-ps3 = PortfolioStock.create(portfolio_id: p1.id, stock_id: s3.id )
+
+
+Portfolio.create
 
 raccomandation = Recommendation.create(name: 'dashboard') 
 

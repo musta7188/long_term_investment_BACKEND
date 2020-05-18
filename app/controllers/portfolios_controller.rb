@@ -4,7 +4,7 @@ class PortfoliosController < ApplicationController
 
   def show 
     portfolio = Portfolio.find(params[:id])
-    render json: {portfolio: portfolio, stocks: portfolio.stocks}
+    render json: portfolio, include: :stocks
   end
 
   def create 

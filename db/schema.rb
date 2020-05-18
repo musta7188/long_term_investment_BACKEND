@@ -45,7 +45,9 @@ ActiveRecord::Schema.define(version: 2020_05_11_163938) do
 
   create_table "stocks", force: :cascade do |t|
     t.string "symbol"
-    t.integer "price"
+    t.integer "open"
+    t.integer "units"
+    t.integer "portfolio_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
