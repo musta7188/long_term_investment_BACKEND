@@ -1,0 +1,2 @@
+class InfoBuysController < ApplicationController
+end

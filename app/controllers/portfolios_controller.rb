@@ -21,4 +21,19 @@ class PortfoliosController < ApplicationController
 
     end
   end
+
+
+
+  def destroy 
+    portfolio = Portfolio.find(params[:id])
+    if portfolio
+      portfolio.destroy 
+      render json: portfolio 
+    else 
+      render json: {error: " portfolio not found"}
+    end
+  end
+
+
+
 end
