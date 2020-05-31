@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Smart Long Term Investment app
 
-Things you may want to cover:
+This is the back-end of the app build with  back-end and React front-end.
+Please find the front-end  repository: https://github.com/musta7188/long_term_investment_front_end
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Getting Started
+Clone the repository and run bundle install to install the Gems.
+you need to set up Environment Variables in you local machine: https://medium.com/@youngstone89/setting-up-environment-variables-in-mac-os-28e5941c771c
