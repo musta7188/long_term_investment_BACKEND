@@ -35,7 +35,7 @@
       render json: {user: user.name, token: generate_token({id: user.id}) }
       
     else 
-      render json: {message: "email or passowrd are wrong"}
+      render json: {message: "password or email are wrong please try again"}
     end
   end
 
